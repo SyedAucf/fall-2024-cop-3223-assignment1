@@ -5,7 +5,7 @@
 
 //functions
 
-double askUserInput()
+double askForUserInput()
 {
 double value;
 scanf("%lf", &value);
@@ -17,13 +17,13 @@ double calculateDistance()
     double x1, x2, y1, y2;
 
 printf("Enter x1: ");
-x1 = askUserInput();
+x1 = askForUserInput();
 printf("Enter x2: ");
-x2 = askUserInput();
+x2 = askForUserInput();
 printf("Enter y1: ");
-y1 = askUserInput();
+y1 = askForUserInput();
 printf("Enter y2: ");
-y2 = askUserInput();
+y2 = askForUserInput();
 
 //Compute distance
 
