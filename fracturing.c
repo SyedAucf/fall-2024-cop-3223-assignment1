@@ -47,9 +47,21 @@ return distance;
 
 double calculatePerimeter()
 {
+    double x1, x2, y1, y2;
+    printf("Enter x1: ");
+    x1 = askForUserInput();
+    printf("Enter x2: ");
+    x2 = askForUserInput();
+    printf("Enter y1: ");
+    y1 = askForUserInput();
+    printf("Enter y2: ");
+    y2 = askForUserInput();
+    
     double distance = distanceFormula(x1, x2, y1, y2);
     double perimeter = 2 * PI * distance;
 
+    printf("Point #1 Entered: x1 = %.2f; y1 = %.2f\n", x1, y1);
+    printf("Point #2 Entered: x2 = %.2f; y2 = %.2f\n", x2, y2);
     printf("The perimeter of the city encompassed by your request is %.2f\n", perimeter);
 
     return 2.0; 
@@ -57,9 +69,21 @@ double calculatePerimeter()
 
 double calculateArea()
 {
+    double x1, x2, y1, y2;
+    printf("Enter x1: ");
+    x1 = askForUserInput();
+    printf("Enter x2: ");
+    x2 = askForUserInput();
+    printf("Enter y1: ");
+    y1 = askForUserInput();
+    printf("Enter y2: ");
+    y2 = askForUserInput();
+
     double distance = distanceFormula(x1, x2, y1, y2);
     double area = PI * pow(distance, 2);
 
+    printf("Point #1 Entered: x1 = %.2f; y1 = %.2f\n", x1, y1);
+    printf("Point #2 Entered: x2 = %.2f; y2 = %.2f\n", x2, y2);
     printf("The area of the city encompassed by your request is %.2f\n", area);
 
     return 2.0;
